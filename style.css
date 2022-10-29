@@ -301,6 +301,22 @@ header a:hover{
     color: white;
 }
 
+.moldura-foto{
+    border-bottom: 1px solid white;
+}
+
+.container-projetos button{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color:#23063E;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
     /*Sessao 1 - bem vindo e minha img*/
     .container-sessao1{
@@ -346,5 +362,14 @@ header a:hover{
     .card-container{
         width: 80%;
         padding: 10px 0;
+    }
+
+    .container-projetos{
+        max-width: 650px;
+        max-height: 350px;
+        width: 100%;
+        margin: 5px;
+        border: 1px solid white;
+        border-radius: 10px;
     }
 }
