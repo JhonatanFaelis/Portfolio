@@ -243,14 +243,21 @@ header a:hover{
 
 .elemento{
     width: 250px;
-    height: 450px;
+    height: 550px;
     flex-shrink: 0;
     opacity: 0.6;
     transition: all 600ms ease-in-out;
 }
 
+
+
 .current-element{
     opacity: 1;
+}
+
+.elemento p{
+    color: black;
+    text-align: center;
 }
 
 
