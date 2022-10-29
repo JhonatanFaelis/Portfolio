@@ -4,11 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DEV - Jhonatan Faelis</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script.js"></script>
+
+    
+    
 </head>
 <body>
-    <h1>testando o Git e Github no Visual</h1>
-    <h1>fiz uma alteracao aqui</h1>
-    <h1>alteracao feita no pc</h1>
+    <header><!--Header-->
+        <nav class="container-header">
+            <a href="">Boas vindas</a>
+            <a href="#sobremim">Sobre mim</a>
+            <a href="#qualificacao">Qualificações</a>
+            <a href="#tecnologias">Tecnologias</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-sessao1"><!-- Sessão 1 Boas vindas -->
+            <div class="container-sessao1-txt">
+                <h1>
+                    Seja bem vindo!
+                </h1>
+
+                <h3>
+                    Me chamo Jhonatan Faelis
+                </h3>
+
+                <p>
+                    Aqui voce vai encontrar um pouco sobre mim, minha tragetoria e o quanto sou apaixonado por programação! Então fique a vontade e descubra um pouco mais sobre minhas qualificações.
+                </p>
+                
+                <a href="https://www.facebook.com/jhonatan.faelis" target="_blank"><img src="./img/faceredonto.png" alt=""></a>
+
+                <a href="https://github.com/JhonatanFaelis" target="_blank"><img src="./img/github.png" alt=""></a>
+
+                <a href="https://www.linkedin.com/in/jhonatan-faelis-b55184255/" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+            </div>
+
+            <div class="container-sessao1-img">
+                <img src="./img/bg_menor.png" alt="">
+            </div>
+        </section>
+
+        <section class="container-sessao3" id="sobremim"> <!--sobre mim -->
+            <h1>Sobre mim </h1>
+            <p>Hoje com 27 anos e trabalhando no setor imobiliario desde 2017 como Corretor de Imoveis. Porem na minha tragetoria ja fui gestor de equipe e associoado a uma construtora. Trabalho HomeOffice desde o inicio da pandemia, o que fez eu buscar formas de me especializar na gestão do tempo para que eu pudesse trabalhar de forma mais efetiva e focado. Sou uma pessoa que sempre busca pela novidades e ferramentas para deixar meu trabalho mais eficaz e foi dessa forma que conheci a programação, procurando por CRM para a gestão de meus clientes e vendo que nenhum deles possuia todos os requesitos quando a questão era atender a necessidade do corretor (O cliente final), comecei a pesquisar para saber como era feito os CRM's, os programas, landing pages entre outras ferramentas que fossem ajudar em meu trabalho. E dessa forma comecei a me apaixonar pela programação.</p>
+        </section>
+
+        <section class="container-sessao2"><!--Sessao 2 Sobre mim com MODAL -->
+            
+            <div class="sessao2-texto" id="qualificacao">
+                <button type="button" id="botao"> MINHAS QUALIFICAÇÔES</button>
+            </div>
+
+            <div class="modal-container">
+                <div class="modalBox">
+                <div class="modal-texto">
+                    <h1>Cursos e Habilidades</h1>
+                    <h3>Desenvolvimento WEB - Em andamento</h3>
+                    <h3>Ingles Avançado - Curso concluido na escola Wise Up</h3>
+                    <h3>Gestão Empresarial - Concluido na FATEC</h3>
+                    <h3>Planejamento e gestão de negocios - Concluido </h3>
+                    <h3>Gestão ágil com SCRUM - Completo </h3>
+                </div>
+                    <button id="close" class="botao_modal"> Voltar </button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="container-sessao4" id="tecnologias"> <!-- tecnologias -->
+            <button class="arrow-left control" aria-label="Previous image"> +| </button>
+            <button class="arrow-right control" aria-label="Previous image"> |+ </button>
+            <div class="gallery-wrapper"> 
+                <div class="gallery">
+                    <div class="elemento current-element"> <!--Elemento 1-->
+                        <div>
+                            <img src="./img/logo-html-5-256.png" alt="" width="256px" height="256px">
+                        </div>
+
+                        <div>
+                            <p>O que é?</p>
+                        </div>
+                        <div>
+                            <p>experiencia</p>
+                        </div>    
+                    </div> <!--FIM Elemento 1-->
+
+                    <div class="elemento"> <!--Elemento 2-->
+                        <div>
+                            <img src="./img/logo-css-3-256.png" alt="" width="256px" height="256px">
+                        </div>
+
+                        <div>
+                            <p>O que é?</p>
+                        </div>
+                        <div>
+                            <p>experiencia</p>
+                        </div>    
+                    </div> <!--FIM Elemento 2-->
+
+                    <div class="elemento"> <!--Elemento 3-->
+                        <div>
+                            <img src="./img/logo-javascript-icon-256.png" alt="" width="256px" height="256px">
+                        </div>
+
+                        <div>
+                            <p>O que é?</p>
+                        </div>
+                        <div>
+                            <p>experiencia</p>
+                        </div>    
+                    </div> <!--FIM Elemento 3-->
+
+                    <div class="elemento"> <!--Elemento 4-->
+                        <div>
+                            <img src="./img/jquery-256.png" alt="" width="256px" height="256px">
+                        </div>
+
+                        <div>
+                            <p>O que é?</p>
+                        </div>
+                        <div>
+                            <p>experiencia</p>
+                        </div>    
+                    </div> <!--FIM Elemento 4-->
+
+                    <div class="elemento"> <!--Elemento 5-->
+                        <div>
+                            <img src="./img/bootstrap-256.png" alt="" width="256px" height="256px">
+                        </div>
+
+                        <div>
+                            <p>O que é?</p>
+                        </div>
+                        <div>
+                            <p>experiencia</p>
+                        </div>    
+                    </div> <!--FIM Elemento 5-->
+                </div>
+            </div>
+        </section>
+
+     
+    </main>
 </body>
 </html>

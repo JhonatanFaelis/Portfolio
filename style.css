@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+body{
+    /*background-image: linear-gradient( 86.1deg,  rgba(35,6,62,1) 33.6%, rgba(110,23,190,1) 103.6% );*/
+   /* background-color: #23063E;*/
+    max-width: 100%;
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #23063E;
+    
+}
+
+header a{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+header a:hover{
+    background-color: #23063E;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+/* FIM DO HEADER */ 
+
+/* COMEÇO SESSAO 1 - BOAS VINDAS E UMA FOTO */
+
+.container-sessao1{
+    background-color: #23063E;
+    
+    display: flex;
+    box-shadow: 10px 10px 8px 10px #18032ccc;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-sessao1-txt{
+    max-width: 565px;
+    
+}
+
+.container-sessao1-txt h1{
+    font-size: 50px;
+   
+}
+
+.container-sessao1-txt h3{
+    font-size: 40px;
+    
+}
+
+.container-sessao1-txt p{
+    font-size: 20px;
+    
+}
+
+.container-sessao1-txt h1, h3, p{
+    padding-top: 10px;
+    color: #fff;
+}
+
+.container-sessao1-txt img{
+    max-width: 54px;
+    width: 54px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+
+.container-sessao1-img img{
+    max-width: 100%;
+    width: 85%;
+       
+}
+
+
+
+/* SESSAO 3 SOBRE MIM */
+
+.container-sessao3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-sessao3 p{
+    max-width: 1200px;
+    width: 60%;
+    margin: auto;
+    color: black;
+}
+
+.container-sessao2 {
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.856);
+    height: 250px;
+    box-shadow: 10px 10px 8px 10px #fff;
+    margin-bottom: 30px;
+}
+
+
+.sessao2-texto button{
+    color: white;
+    padding: 50px;
+    background: #23063E;
+    box-shadow: 10px 10px 8px 10px #18032ccc;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    margin-top: 75px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*Qualificação*/
+
+.modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.modalBox{
+    display: none;
+    
+    
+    z-index: 99;
+    max-width: 500px;
+    max-height: 350px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    overflow: auto;
+    background: rgba(14, 13, 13, 0.685);
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.modalBox p{
+    color: white;
+}
+
+.botao_modal{
+    background-color: #23063E;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 15px;
+    
+}
+
+.modal-texto h1{
+    padding-top: 10px;
+    color: white;
+}
+
+.modal-texto h3{
+    margin-left: 10px;
+    padding-top: 25px;
+    text-align: left;
+    color: white;
+}
+
+/*CONTEINER 4 - TECNOLOGIAS*/
+
+/*
+.container-sessao4{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
+    
+}
+
+.card-container{
+  width: 30.3%; 
+  color: black;
+}
+
+.card-container p{
+    color: black;
+}
+
+*/
+
+.container-sessao4{
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+    
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+/*Fazer ter uma barra de rolagem aqui.*/
+.gallery-wrapper{
+    overflow-x: auto;
+}
+
+
+.arrow-left, .arrow-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right{
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+
+}
+
+.arrow-left:hover, .arrow-right:hover{
+    opacity: 1;
+}
+
+.elemento{
+    width: 250px;
+    height: 450px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+
+.current-element{
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    /*Sessao 1 - bem vindo e minha img*/
+    .container-sessao1{
+        flex-wrap: wrap;
+    }
+
+    .container-sessao1-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-sessao1-img img{
+        width: 50%;
+        text-align: center;
+    }
+
+      /*Sessao 1 - bem vindo e minha img*/
+}
+
+
+@media screen and (max-width: 758px) {
+    /*Sessao 1 - bem vindo e img*/
+    .container-sessao1-txt{
+        max-width: 565px;
+        text-align: center;
+        
+    }
+    .container-sessao1-txt h1{
+        font-size: 40px;
+       
+    }
+    
+    .container-sessao1-txt h3{
+        font-size: 30px;
+        
+    }
+    
+    .container-sessao1-txt p{
+        font-size: 20px;
+        max-width: 360px;
+    }
+    /*sessao 4 - tecnologias */
+    .card-container{
+        width: 80%;
+        padding: 10px 0;
+    }
+}
