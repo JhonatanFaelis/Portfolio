@@ -275,6 +275,32 @@ header a:hover{
     opacity: 1;
 }
 
+
+/* Sessao 5 - projetos */
+
+.container-sessao5{
+    display: flex;
+    background-color: #23063E;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.container-projetos{
+    max-width: 650px;
+    max-height: 350px;
+    width: 30.33%;
+    margin: 10px 10px 10px 0;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.container-sessao5 h4, h3, a{
+    color: white;
+}
+
 @media screen and (max-width: 900px) {
     /*Sessao 1 - bem vindo e minha img*/
     .container-sessao1{
