@@ -19,7 +19,7 @@ header{
     height: 50px;
     display: flex;
     justify-content: center;
-    background-color: #23063E;
+    background-color: #151515;
     
 }
 
@@ -33,7 +33,7 @@ header a{
 }
 
 header a:hover{
-    background-color: #23063E;
+    background-color: #990E22;
     color: white;
     font-weight: 600;
 }
@@ -45,10 +45,9 @@ header a:hover{
 /* COMEÇO SESSAO 1 - BOAS VINDAS E UMA FOTO */
 
 .container-sessao1{
-    background-color: #23063E;
-    
+    background-color: #151515;
     display: flex;
-    box-shadow: 10px 10px 8px 10px #18032ccc;
+    box-shadow: 10px 10px 8px 10px #151515;
     align-items: center;
     justify-content: space-around;
 }
@@ -99,21 +98,27 @@ header a:hover{
 .container-sessao3{
     margin-top: 20px;
     text-align: center;
+    background-color: #181818c5;
+    height: 250px;
+    
 }
 
 .container-sessao3 p{
-    max-width: 1200px;
+    max-width: 800px;
     width: 60%;
     margin: auto;
-    color: black;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.container-sessao3 h1{
+    color: white;
 }
 
 .container-sessao2 {
     text-align: center;
-    margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: #171717;
     height: 250px;
-    box-shadow: 10px 10px 8px 10px #fff;
     margin-bottom: 30px;
 }
 
@@ -121,8 +126,8 @@ header a:hover{
 .sessao2-texto button{
     color: white;
     padding: 50px;
-    background: #23063E;
-    box-shadow: 4px -2px 8px 3px #18032ccc;
+    background: #990E22;
+    
     border-radius: 10px;
     border: none;
     font-weight: 500;
@@ -159,12 +164,38 @@ header a:hover{
     
 }
 
+.modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.modalBox{
+    display: none;
+    
+    
+    z-index: 99;
+    max-width: 500px;
+    max-height: 350px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    overflow: auto;
+    background: rgba(14, 13, 13, 0.685);
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
 .modalBox p{
     color: white;
 }
 
 .botao_modal{
-    background-color: #23063E;
+    background-color: #990E22;
     color: white;
     border-radius: 5px;
     border: none;
@@ -195,7 +226,9 @@ header a:hover{
     padding: 15px;
     max-width: 640px;
     margin: 0 auto;
-    
+    background-color: #181818c5;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .gallery{
@@ -243,10 +276,11 @@ header a:hover{
 
 .elemento{
     width: 250px;
-    height: 550px;
+    height: 480px;
     flex-shrink: 0;
     opacity: 0.6;
     transition: all 600ms ease-in-out;
+    
 }
 
 
@@ -256,7 +290,7 @@ header a:hover{
 }
 
 .elemento p{
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -273,45 +307,48 @@ header a:hover{
     text-align: center;
 }
 
+.container-sessao5{
+    display: flex;
+    background-color: #151515;
+    text-align: center;
+}
+
 .container-projetos{
-    max-width: 550px;
-    max-height: 400px;
-    width: 100%;
-    height: 100%;
-    margin: 10px 10px 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.projetos{
+    margin-top: 10px;
     border: 1px solid white;
-    border-radius: 10px;
-}
-
-.container-sessao5 h4, h3, a{
-    color: white;
-}
-
-
-
-.moldura-foto{
-    border-bottom: 1px solid white;
-}
-
-.container-projetos button{
-    background-color: white;
-    border: none;
-    
     border-radius: 5px;
-    color:#23063E;
-    width: 100%;
-    height: 100%;
-    padding: 10px 0;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
+    max-height: 550px;
+    max-width: 280px;
 }
 
-.container-projetos button:hover{
+.info-projetos h5{
     color: white;
-    background-color: green;
 }
 
+
+.info-projetos button{
+    background-color: #990E22;
+    color: white;
+    border: none;
+    width: 95%;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.info-projetos button:hover{
+    color: #990E22;
+    background-color: white;
+}
 @media screen and (max-width: 900px) {
     /*Sessao 1 - bem vindo e minha img*/
     .container-sessao1{
@@ -360,12 +397,8 @@ header a:hover{
     }
 
     .container-projetos{
-        max-width: 650px;
-        max-height: 550px;
-        width: 100%;
-        height: 100%;
-        margin: 5px;
-        border: 1px solid white;
-        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
