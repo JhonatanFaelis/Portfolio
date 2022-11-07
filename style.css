@@ -368,7 +368,7 @@ header{
     background-color: #990E22;
     color: white;
     border: none;
-    width: 95%;
+    width: 100%;
     border-radius: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -443,12 +443,6 @@ header{
     margin-top: 15px;
     
 }
-
-
-
-
-
-
 
     /*Fim menu responsivo*/
     /*Sessao 1 - bem vindo e img*/
