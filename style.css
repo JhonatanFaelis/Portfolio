@@ -404,4 +404,9 @@ header a:hover{
         flex-wrap: wrap;
         gap: 10px;
     }
+
+    .info-projetos button{
+        width: 100%;
+        
+    }
 }
