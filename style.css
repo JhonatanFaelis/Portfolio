@@ -158,7 +158,6 @@ header{
     color: white;
     padding: 50px;
     background: #990E22;
-    
     border-radius: 10px;
     border: none;
     font-weight: 500;
@@ -166,6 +165,14 @@ header{
     cursor: pointer;
     text-transform: uppercase;
 }
+
+.sessao2-texto button:hover{
+    border: 2px solid #990E22;
+    background-color: transparent;
+    box-shadow: #990E22 0px 0px 12px 1px inset, #990E22 0px 0px 12px 1px;
+    color: #990E22;
+}
+
 
 /*Qualificação*/
 
@@ -236,6 +243,15 @@ header{
     margin-top: 15px;
     
 }
+
+.botao_modal:hover{
+    border: 2px solid #990E22;
+    background-color: transparent;
+    box-shadow: #990E22 0px 0px 12px 1px inset, #990E22 0px 0px 12px 1px;
+    color: #990E22;
+}
+
+
 
 .modal-texto h1{
     padding-top: 10px;
@@ -376,10 +392,20 @@ header{
     font-weight: 600;
 }
 
+.info-projetos button:hover{
+    border: 2px solid #990E22;
+    background-color: transparent;
+    box-shadow: #990E22 0px 0px 12px 1px inset, #990E22 0px 0px 12px 1px;
+}
+
 
 
 .info-projetos a{
     color: white;
+}
+
+.info-projetos a:hover{
+    color: #990E22;
 }
 
 @media screen and (max-width: 900px) {
